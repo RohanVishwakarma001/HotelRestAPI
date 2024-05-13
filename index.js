@@ -11,6 +11,9 @@ require("dotenv").config();
 app.use(bodyParser.json()); //req.body
 
 const port = process.env.PORT || 3000;
+
+//Home Route
+
 app.get("/", (req, res) => {
   res.send("Welcome to our Hotel");
 });
